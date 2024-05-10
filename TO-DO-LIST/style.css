@@ -1,0 +1,166 @@
+/* Add styles for new elements */
+.input-section select {
+    border-radius: 0.5rem;
+    height: 3rem;
+    border-width: 2px black solid;
+    flex-shrink: 1;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.input-section input[type="date"] {
+    border-radius: 0.5rem;
+    height: 3rem;
+    border-width: 2px black solid;
+    flex-shrink: 1;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+/* Update styles for existing elements */
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change from space-between to flex-start */
+    align-items: center;
+    min-height: 100%;
+    max-height: 54vh;
+    overflow-y: auto; /* Change to auto */
+    width: 100%;
+}
+
+.todo-item {
+    background-color: wheat;
+    border-radius: 12px;
+    margin-bottom: 10px; /* Increase margin for better separation */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Update button styles */
+.btn {
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: 3rem;
+    min-height: 3rem;
+    text-transform: uppercase;
+    border-width: 1px;
+    animation: button-pop var(--animation-btn, .25s) ease-in-out;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1em;
+    text-decoration-line: none;
+    transition: .2s all cubic-bezier(.4, 0, .2, 1);
+    display: inline-flex;
+    margin-right: 10px; /* Add margin to separate buttons */
+}
+
+/* Update button hover styles */
+.btn:hover {
+    background-color: rgb(108, 109, 110);
+    color: white;
+}
+
+.btn-add {
+    background-color: green;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: white;
+    color: rgb(255, 221, 0);
+}
+
+.btn-success {
+    opacity: 1;
+    background-color: rgb(50, 177, 50);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: white;
+    color: rgb(50, 177, 50);
+}
+
+.btn-error {
+    opacity: 1;
+    background-color: rgb(246, 77, 4);
+    color: white;
+}
+
+.btn-error:hover {
+    background-color: white;
+    color: rgb(246, 77, 4);
+}
+
+/* Add styles for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px; /* Add margin to separate dropdown from other elements */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: yellowgreen;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 400px;
+    min-width: 500px;
+    max-width: 1000px;
+    background-color: #f5f5f5; /* Change the background color */
+    border-radius: 20px;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+}
